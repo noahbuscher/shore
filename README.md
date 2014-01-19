@@ -19,7 +19,8 @@ Using Shore is pretty simple. Just create an audio element with a file and call 
 				shore({
 					source: 'source',
 					view: 'visualisation',
-					color: '#FF2C00'
+					color: '#FF2C00',
+					scale: 0.4
 				});
 
 			};
