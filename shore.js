@@ -6,15 +6,16 @@ var ctx;
 var analyser;
 var frequencyData;
 var visualisation;
+var params;
 
-function shore(params) {
+function shore(paramobj) {
     // defaults
-    params.view = params.view || 'view';
-    params.source = params.source || 'source';
-    params.color = params.color || 'screen';
+    paramobj.view = paramobj.view || 'view';
+    paramobj.source = paramobj.source || 'source';
+    paramobj.color = paramobj.color || 'screen';
 
     // load params into global var
-    var params = params;
+    params = paramobj;
 
     c = document.getElementById(params.view);
 	ctx = c.getContext("2d");
@@ -81,7 +82,11 @@ function update() {
         // don't log
     } else {
         // the frequencyData multiplier controls the graph scale
-        ctx.fillRect(xpos, (200 - (frequencyData[0] * 0.40)), 1, 200);
+        var gradient = ctx.createLinearGradient(0, 0, 0, c.height);
+        gradient.addColorStop(0, 'white');
+        gradient.addColorStop(1, params.color);
+        ctx.fillStyle = gradient;
+        ctx.fillRect(xpos, (c.height - (frequencyData[0] * 0.40)), 1, c.height);
         xpos = xpos + 1;
     }
 }
