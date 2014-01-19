@@ -86,7 +86,7 @@ function update() {
         gradient.addColorStop(0, 'white');
         gradient.addColorStop(1, params.color);
         ctx.fillStyle = gradient;
-        ctx.fillRect(xpos, (c.height - (frequencyData[0] * 0.40)), 1, c.height);
+        ctx.fillRect(xpos, (c.height - (frequencyData[0] * params.scale)), 1, c.height);
         xpos = xpos + 1;
     }
 }
