@@ -7,6 +7,8 @@ Shore is a simple waveform generator library for JS. It's reminiscent of SoundCl
 
 Shore is currently real-time and volume dependant, so in order for the waveform to work, you must have the file audibly playing. I'm working on getting pre-processing working, though, so this should be fixed soon. I hope.
 
+Also, if the waveform outgrows the canvas, the canvas scrolls to fit it, so no worries there.
+
 ### Use
 
 Using Shore is pretty simple. Just create an audio element with a file and call the Shore function with options! Here's an example HTML snippet:
