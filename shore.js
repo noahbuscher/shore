@@ -86,7 +86,14 @@ function update() {
         gradient.addColorStop(0, 'white');
         gradient.addColorStop(1, params.color);
         ctx.fillStyle = gradient;
-        ctx.fillRect(xpos, (c.height - (frequencyData[0] * params.scale)), 1, c.height);
         xpos = xpos + 1;
+        if (xpos >= c.width - 2) {
+            xpos = c.width - 3;
+            var img = document.createElement('img');
+            img.src = c.toDataURL("image/jpg");
+            ctx.clearRect (0, 0, c.width, c.height);
+            ctx.drawImage(img, -1, 0);
+        }
+        ctx.fillRect(xpos, (c.height - (frequencyData[0] * params.scale)), 1, c.height);
     }
 }
