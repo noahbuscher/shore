@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Shore Example 1</title>
+		<meta charset="UTF-8">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../shore.js"></script>
+		<script>
+			window.onload = function() {
+				shore({
+					source: 'source',
+					view: 'visualisation',
+					color: '#FF2C00'
+				});
+
+			};
+		</script>
+	</head>
+	<body>
+		
+		<audio id="source" controls>
+  			<source src="bird.wav" type="audio/wav">
+		</audio>
+		<canvas id="visualisation" width="800" height="200"></canvas>
+	</body>
+</html>
