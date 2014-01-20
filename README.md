@@ -44,4 +44,4 @@ The view is the canvas that you'll be displaying on, the source is the audio ele
 
 ### Thanks
 
-Thank you to [freesound.org](http://instagram.com/p/jU4RWIxZ7u/) for the example audio file.
+Thank you to [freesound.org](http://www.freesound.org/people/freesound61476/sounds/62159/) for the example audio file.
