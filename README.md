@@ -26,7 +26,6 @@ Using Shore is pretty simple. Just create an audio element with a file and call 
 					color: '#FF2C00',
 					scale: 0.4
 				});
-
 			};
 		</script>
 	</head>
@@ -40,7 +39,7 @@ Using Shore is pretty simple. Just create an audio element with a file and call 
 </html>
 ```
 
-The view is the canvas that you'll be displaying on, the source is the audio element with playable file, and the color is the hue of the waveform.
+The view is the canvas that you'll be displaying on, the source is the audio element with playable file, the color is the hue of the waveform, and the scale is the waveform size.
 
 ### Thanks
 
