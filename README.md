@@ -1,9 +1,7 @@
 Shore
 =====
 
-Shore is a simple waveform generator library for JS. It's reminiscent of SoundCloud's, but can be used in conjunction with an audio element and is not tied to an online service. Here's what a basic waveform looks like using Shore:
-
-![](http://codingbean.com/shore/wave1.png)
+Shore is a simple waveform generator library for JS. It's reminiscent of SoundCloud's, but can be used in conjunction with an audio element and is not tied to an online service.
 
 Shore is currently real-time and volume dependant, so in order for the waveform to work, you must have the file audibly playing. I'm working on getting pre-processing working, though, so this should be fixed soon. I hope.
 
