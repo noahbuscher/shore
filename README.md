@@ -1,7 +1,7 @@
 Shore
 =====
 
-Shore is a simple waveform generator library for JS. It's reminiscent of SoundCloud's, but can be used in conjunction with an audio element and is not tied to an online service. Feel free to try out the [demo](http://codingbean.github.io/Shore/), but you may need to refresh the page if it's not working.
+Shore is a simple waveform generator library for JS. It's reminiscent of SoundCloud's, but can be used in conjunction with an audio element and is not tied to an online service. Feel free to try out the [demo](http://noahbuscher.github.io/Shore/), but you may need to refresh the page if it's not working.
 
 Shore is currently real-time and volume dependant, so in order for the waveform to work, you must have the file audibly playing. I'm working on getting pre-processing working, though, so this should be fixed soon. I hope. Also, if the waveform outgrows the canvas, the canvas scrolls to fit it, so no worries there.
 
