@@ -1,0 +1,25 @@
+/*
+ * Tiny reset
+ */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+canvas {
+  display: block;
+}

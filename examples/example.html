@@ -1,8 +1,9 @@
 <html>
 	<head>
-		<title>Shore Example 1</title>
+		<title>Shore Example</title>
 		<meta charset="UTF-8">
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link href="./main.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="../shore.js"></script>
 		<script>
 			window.onload = function() {
@@ -12,14 +13,17 @@
 					color: '#FF2C00',
 					scale: 0.4
 				});
-
 			};
 		</script>
 	</head>
 	<body>
-		
+		<h1>Shore Example</h1>
+		<p>
+			Shore is a simple Javascript waveform library to visualize audio files
+			on the web.
+		</p>
 		<audio id="source" controls>
-  			<source src="bird.wav" type="audio/wav">
+  			<source src="./bird.wav" type="audio/wav">
 		</audio>
 		<canvas id="visualisation" width="800" height="200"></canvas>
 	</body>
